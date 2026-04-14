@@ -1,0 +1,33 @@
+# Theme config
+theme = catppuccin-mocha.conf
+
+# Fonts
+font-family = Monaspace Krypton NF
+font-family-bold = Monaspace Krypton NF Bold
+font-family-italic = Monaspace Krypton NF Italic
+font-family-bold-italic = Monaspace Krypton NF Bold Italic
+font-size = 12
+font-thicken = true
+
+# macOS specific
+macos-auto-secure-input = true
+macos-secure-input-indication = true
+
+window-padding-balance = false
+window-padding-x = 10
+window-padding-y = 10,2
+
+# Application settings
+auto-update = download
+auto-update-channel = stable
+clipboard-trim-trailing-spaces = true
+shell-integration = detect
+
+# Window settings
+window-height = 45
+window-width = 180
+
+# Cursor settings
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor

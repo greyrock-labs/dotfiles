@@ -1,0 +1,31 @@
+[commit]
+	gpgsign = true
+[core]
+	autocrlf = input
+	excludesfile = {{ .chezmoi.homeDir }}/.config/git/ignore
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+	allowedSignersFile = "{{.chezmoi.homeDir}}/.ssh/allowed_signers"
+[init]
+	defaultBranch = main
+[merge]
+  ff = only
+[pull]
+	rebase = true
+[push]
+  autoSetupRemote = true
+[rebase]
+	autoStash = true
+[status]
+  submoduleSummary = false
+[tag]
+	forceSignAnnotated = true
+	gpgSign = true
+[url "ssh://git@github.com/"]
+  pushInsteadOf = https://github.com/
+[user]
+	name = {{ .personal.full_name }}
+	email = {{ .personal.git_email }}
+	signingkey = {{ onepasswordRead "op://roomryqkfvyrxb2pvzu7ut7ufu/i2wujq744rsbah44q3wgkwl6gi/public key" "7PZJXY3IIFEJDHSPIUCD526DC4" }}
