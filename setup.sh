@@ -2,7 +2,7 @@
 
 set -Eeuo pipefail
 
-declare -r DOTFILES_REPO_URL="https://github.com/greyrock-labs/dotfiles"
+declare -r DOTFILES_REPO_URL="git@git.greyrock.io:greyrock-labs/dotfiles.git"
 
 function get_os_type() {
   uname
@@ -45,6 +45,6 @@ if [ "${ostype}" == "Darwin" ]; then
 
   # Apply dotfiles
   echo "Applying Chezmoi configuration."
-  chezmoi init greyrock-labs/dotfiles
+  chezmoi init "${DOTFILES_REPO_URL}"
   chezmoi apply
 fi
