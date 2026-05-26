@@ -4,6 +4,11 @@ host *
 
 Include "config.d/*"
 
+Host skedaddle.greyrock.io
+  User ubuntu
+  Port 22222
+  SetEnv TERM=xterm-256color
+
 Host 192.168.*.*
   StrictHostKeyChecking no
   UserKnownHostsFile /dev/null
