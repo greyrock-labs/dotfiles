@@ -87,8 +87,8 @@
   "roo-cline.deniedCommands": [],
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.shellIntegration.enabled": false,
-  "todo-tree.highlights.useColourScheme": true,
-  "todo-tree.tree.expanded": true,
+  "better-todo-tree.highlights.useColourScheme": true,
+  "better-todo-tree.tree.expanded": true,
   "update.mode": "default",
   "update.showReleaseNotes": false,
   "vs-kubernetes": {
