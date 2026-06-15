@@ -89,6 +89,7 @@
   "terminal.integrated.shellIntegration.enabled": false,
   "better-todo-tree.highlights.useColourScheme": true,
   "better-todo-tree.tree.expanded": true,
+  "todo-tree.ripgrep.ripgrep": "/opt/homebrew/bin/rg",
   "update.mode": "default",
   "update.showReleaseNotes": false,
   "vs-kubernetes": {
