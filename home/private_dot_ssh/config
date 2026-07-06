@@ -3,6 +3,9 @@ Host skedaddle.greyrock.io
   Port 22222
   SetEnv TERM=xterm-256color
 
+Host homeassistant.internal.greyrock.io
+  User root
+
 host *
   ControlMaster auto
   ControlPath ~/.ssh/controlmasters/ssh-%r@%h:%p
