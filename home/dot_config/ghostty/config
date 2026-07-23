@@ -27,6 +27,7 @@ shell-integration = detect
 # Window settings
 window-height = 45
 window-width = 180
+confirm-close-surface = false
 
 # Cursor settings
 cursor-style = block
