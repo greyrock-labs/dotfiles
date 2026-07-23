@@ -6,6 +6,9 @@ Host skedaddle.greyrock.io
 Host homeassistant.internal.greyrock.io
   User root
 
+Host codswallop.internal.greyrock.io
+  User truenas_admin
+
 host *
   ControlMaster auto
   ControlPath ~/.ssh/controlmasters/ssh-%r@%h:%p
