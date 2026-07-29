@@ -59,12 +59,11 @@ brew "wget"
 brew "yamllint"
 brew "yq"
 brew "zoxide"
-brew "aymanbagabas/tap/shcopy"
-brew "fluxcd/tap/flux"
-brew "kanidm/kanidm/kanidm"
+brew "fluxcd/tap/flux", trusted: true
+brew "kanidm/kanidm/kanidm", trusted: true
 brew "manaflow-ai/cmux/cmux"
-brew "mirceanton/taps/kubectl-switch"
-brew "terror/tap/just-lsp"
+brew "mirceanton/taps/kubectl-switch", trusted: true
+brew "terror/tap/just-lsp", trusted: true
 
 cask "1password"
 cask "1password-cli"
@@ -106,8 +105,8 @@ cask "thaw"
 cask "transmit"
 cask "winbox"
 cask "visual-studio-code"
-cask "goreleaser/tap/goreleaser"
-cask "home-operations/tap/yayamlls"
+cask "goreleaser/tap/goreleaser", trusted: true
+cask "home-operations/tap/yayamlls", trusted: true
 
 mas "1Password for Safari", id: 1569813296
 mas "AdGuard Mini", id: 1440147259
