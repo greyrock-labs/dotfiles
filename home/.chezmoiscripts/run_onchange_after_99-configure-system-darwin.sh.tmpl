@@ -67,14 +67,11 @@ defaults write com.apple.commerce AutoUpdate -bool true
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Safari
+# Safari preferences CANNOT be set via `defaults write` on modern macOS.
+# The sandbox + SIP block writes to both ~/Library/Preferences/com.apple.Safari
+# and the container plist at ~/Library/Containers/com.apple.Safari/.../com.apple.Safari.
+# Set these manually in Safari > Settings instead.
 # ---------------------------------------------------------------------------------------------------------------------
-defaults write com.apple.Safari AutoFillCreditCardData -bool false
-defaults write com.apple.Safari AutoFillFromAddressBook -bool false
-defaults write com.apple.Safari AutoFillMiscellaneousForms -bool false
-defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-defaults write com.apple.Safari ShowFavoritesBar -bool true
-defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
 
 # ---------------------------------------------------------------------------------------------------------------------
 # UX
