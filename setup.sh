@@ -2,7 +2,7 @@
 
 set -Eeuo pipefail
 
-declare -r DOTFILES_REPO_URL="git@git.greyrock.io:greyrock-labs/dotfiles.git"
+declare -r DOTFILES_REPO_URL="git@git.greyrock.io:todd/dotfiles.git"
 
 function get_os_type() {
   uname
