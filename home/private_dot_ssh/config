@@ -12,6 +12,7 @@ Host codswallop.internal.greyrock.io
 host *
   ControlMaster auto
   ControlPath ~/.ssh/controlmasters/%C
+  ControlPersist 10m
 
 Include "config.d/*"
 
