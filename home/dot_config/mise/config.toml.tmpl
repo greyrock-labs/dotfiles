@@ -7,6 +7,9 @@ always_keep_install = false  # deleted on failure by default
 
 idiomatic_version_file_enable_tools = ["node"]
 
+[settings.github]
+credential_command = "op read --account 7PZJXY3IIFEJDHSPIUCD526DC4 'op://scxg6mxpeiyz4coi6ivojwp2mq/q6sdnglyje436igdvbz2typygu/password'"
+
 [env]
 _.file = [
 {{- if not .is_workstation }}
