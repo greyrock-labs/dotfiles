@@ -1,5 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "default_agent": "orchestrator",
   "subagent_depth": 1,
   "mcp": {
     "litellm": {
@@ -7,8 +8,8 @@
       "type": "remote",
       "url": "https://litellm.greyrock.io/mcp/",
       "headers": {
-        "Authorization": "Bearer {{ onepasswordRead "op://s6hze6apb3hsj7ne33px4aepje/e4x6kc34nnkywjyleeqtav3ywq/master_key" "7PZJXY3IIFEJDHSPIUCD526DC4" }}",
-        "x-litellm-api-key": "Bearer {{ onepasswordRead "op://s6hze6apb3hsj7ne33px4aepje/e4x6kc34nnkywjyleeqtav3ywq/master_key" "7PZJXY3IIFEJDHSPIUCD526DC4" }}"
+        "Authorization": "Bearer {env:OPENCODE_LITELLM_KEY}",
+        "x-litellm-api-key": "Bearer {env:OPENCODE_LITELLM_KEY}"
       },
       "oauth": false
     }
@@ -23,7 +24,7 @@
       "name": "LiteLLM",
       "options": {
         "baseURL": "https://litellm.greyrock.io/v1",
-        "apiKey": "{{ onepasswordRead "op://s6hze6apb3hsj7ne33px4aepje/e4x6kc34nnkywjyleeqtav3ywq/master_key" "7PZJXY3IIFEJDHSPIUCD526DC4" }}"
+        "apiKey": "{env:OPENCODE_LITELLM_KEY}"
       },
       "models": {
         "minimax/MiniMax-M2-7": {
