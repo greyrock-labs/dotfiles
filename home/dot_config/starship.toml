@@ -22,10 +22,10 @@ truncate_to_repo = false
 truncation_length = 3
 truncation_symbol = "…/"
 style = "fg:peach"
-format = "[ $path]($style) "
+format = "[ $path]($style) "
 
 [golang]
-symbol = " "
+symbol = " "
 
 [hostname]
 ssh_only = true
@@ -39,7 +39,7 @@ symbol = "󱃾 "
 format = '[$symbol$context \($namespace\)]($style) '
 
 [python]
-symbol = " "
+symbol = " "
 
 [time]
 disabled = true

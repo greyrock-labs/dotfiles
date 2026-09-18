@@ -113,6 +113,7 @@
     "editorIndentGuide.activeBackground5": "#89b4fa",
     "editorIndentGuide.activeBackground6": "#cba6f7",
   },
+  "remote.SSH.useLocalServer": false,
   "remote.SSH.remotePlatform": {
     "*.internal.greyrock.io": "linux"
   }
