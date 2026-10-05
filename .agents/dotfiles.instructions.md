@@ -47,7 +47,7 @@ parse. Report any deviation from the patch after applying it.
 | `bjw-s.dev` domains | `greyrock.io` |
 | `Bernd Schorgers` / `bjw-s` | `Todd Punderson` / `tpunderson` |
 | `:bjw-s/dotfiles.git` in `setup.sh` | `:todd/dotfiles.git` |
-| named 1Password vaults | UUID-form `op://` refs (see below) |
+| upstream's 1Password vault/item UUIDs | this account's vault/item UUIDs |
 
 ## Secrets
 
@@ -58,12 +58,15 @@ environment, which is what lets most config files stay non-`.tmpl`:
 - the config references it as `{env:VAR_NAME}`
 
 Only files that must resolve a secret at render time carry a `.tmpl` suffix and
-call `onepasswordRead`. Those refs are UUID-form with the account id as the
-second argument:
+call `onepasswordRead`. Those refs are UUID-form, matching upstream, with no
+account argument (only one 1Password account is signed in):
 
 ```
-{{ onepasswordRead "op://<vault-uuid>/<item-uuid>/<field>" "7PZJXY3IIFEJDHSPIUCD526DC4" }}
+{{ onepasswordRead "op://<vault-uuid>/<item-uuid>/<field>" }}
 ```
+
+The one named-form ref is mise's `credential_command`
+(`op://Developer/GitHub - Mise/password`), which matches upstream as-is.
 
 The `Developer` vault (`scxg6mxpeiyz4coi6ivojwp2mq`) holds the SSH signing key
 and the GitHub token that mise uses for its API rate limit. Moving an item
