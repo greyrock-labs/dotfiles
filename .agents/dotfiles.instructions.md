@@ -78,7 +78,11 @@ Never print a secret's value. To check that a ref resolves, pipe it to
 ## Git conventions
 
 - Commit directly to `main`. No branches, no pull requests.
-- Push only when the user asks.
+- Push safe commits without asking — routine, verified changes such as adding
+  or removing packages and tools, or doc edits. Ask before pushing anything
+  risky: secrets or 1Password refs, signing or SSH config, setup and
+  `.chezmoiscripts` changes, shell startup files, history rewrites, or
+  anything you could not verify.
 - Commits are signed through the 1Password SSH agent. A signing failure usually
   means the agent config (`~/.config/1Password/ssh/agent.toml`) names the wrong
   vault, or the 1Password app is not running — it is not a missed prompt.
