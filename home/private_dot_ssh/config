@@ -1,6 +1,6 @@
 Host skedaddle skedaddle.greyrock.io
   HostName skedaddle.greyrock.io
-  User ubuntu
+  User todd
   Port 22222
   SetEnv TERM=xterm-256color
 
