@@ -3,6 +3,8 @@
 [core]
 	autocrlf = input
 	excludesfile = {{ .chezmoi.homeDir }}/.config/git/ignore
+[fetch]
+	prune = true
 [gpg]
   format = ssh
 [gpg "ssh"]
