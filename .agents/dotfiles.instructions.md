@@ -46,7 +46,7 @@ parse. Report any deviation from the patch after applying it.
 |---|---|
 | `bjw-s.dev` domains | `greyrock.io` |
 | `Bernd Schorgers` / `bjw-s` | `Todd Punderson` / `tpunderson` |
-| `:bjw-s/dotfiles.git` in `setup.sh` | `:todd/dotfiles.git` |
+| `:bjw-s/dotfiles.git` in `setup.sh` | `:greyrock-labs/dotfiles.git` |
 | upstream's 1Password vault/item UUIDs | this account's vault/item UUIDs |
 
 ## Secrets
