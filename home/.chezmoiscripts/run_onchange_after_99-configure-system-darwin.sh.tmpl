@@ -64,6 +64,8 @@ sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate CriticalUpdate
 sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency -int 1
 # Install app updates automatically
 defaults write com.apple.commerce AutoUpdate -bool true
+# Let Tailscale (standalone) install its own updates; brew skips it as an auto_updates cask
+defaults write io.tailscale.ipn.macsys SUAutomaticallyUpdate -bool true
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Safari
